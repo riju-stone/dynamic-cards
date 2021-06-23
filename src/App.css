@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.form-wrapper{
+.app-wrapper{
   height: 100vh;
   display: flex;
   flex-direction: column;

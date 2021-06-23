@@ -1,11 +1,11 @@
 import React from "react"
 import "./App.css"
-import Card from "./components/card/Card"
+import Form from "../src/components/form/Form"
 
 function App() {
     return (
-        <div className="form-wrapper">
-            <Card />
+        <div className="app-wrapper">
+            <Form />
         </div>
     )
 }
