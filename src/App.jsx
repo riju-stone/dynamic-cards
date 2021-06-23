@@ -1,11 +1,11 @@
 import React from "react"
 import "./App.css"
-import Form from "../src/components/form/Form"
+import PaymentForm from "./components/form/PaymentForm"
 
 function App() {
     return (
         <div className="app-wrapper">
-            <Form />
+            <PaymentForm/>
         </div>
     )
 }

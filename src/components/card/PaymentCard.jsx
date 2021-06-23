@@ -1,10 +1,10 @@
 import React from "react"
 import "./Card.css"
-import background from "../../../src/assets/background/6.jpg"
-import discover from "../../../src/assets/types/mastercard.svg"
+import background from "../../../src/assets/background/5.jpg"
+import discover from "../../../src/assets/types/discover.png"
 import chip from "../../assets/chip.png"
 
-function Card(){
+function PaymentCard(){
     return( 
         <div className="card">
             <div className="card-front">
@@ -36,6 +36,9 @@ function Card(){
                 </div>
             </div>
             <div className="card-back">
+                <div className="card-background">
+                    <img src={background} alt="" className="card-background-image" />
+                </div>
                 <div className="card-strip"></div>
                 <div className="card-cvv"></div>
                 <div className="card-instructions"></div>
@@ -44,4 +47,4 @@ function Card(){
     )
 }
 
-export default Card
+export default PaymentCard

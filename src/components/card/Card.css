@@ -1,22 +1,16 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700|Source+Sans+Pro:400,600,700&display=swap");
-
-body{
-    font-family: "Source Sans Pro", sans-serif;
-}
 .card{
     height: 300px;
     width: 500px;
-    background-color: aquamarine;
-    border-radius: 15px;
-    box-shadow: 0px 40px 80px #577481;
+    border-radius: 10px;
     overflow: hidden;
-    margin-left: 20px;
-    margin-left: 20px;
+    box-shadow: 0px 20px 50px #49626d;
+    z-index: 2;
 }
 
 .card-front{
     height: 100%;
     width: 100%;
+    z-index: 2;
 }
 
 .card-background{
@@ -25,22 +19,24 @@ body{
 }
 
 .card-background-image{
-    height: 200%;
+    filter:blur(3px);
+    height: 150%;
     width: 100%;
 }
 
 .card-type{
     position: relative;
     top: -280px;
-    left: 310px;
+    left: 300px;
     height: 40px;
     width: 180px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .card-type-image{
     height: 100%;
     width: 100%;
+    z-index: 2;
 }
 
 .card-chip{
@@ -49,11 +45,13 @@ body{
     width: 55px;
     top: -280px;
     left: 50px;
+    z-index: 2;
 }
 
 .card-chip-image{
     height: 100%;
     width: 100%;
+    z-index: 2;
 }
 
 .card-number{
@@ -64,18 +62,20 @@ body{
     color: #ffff;
     font-size: 2rem;
     font-weight:lighter;
+    z-index: 2;
 }
 
 #number-gap{
     display: inline;
-    letter-spacing: 25px;
+    letter-spacing: 30px;
 }
 
 .card-owner{
     position: relative;
-    top: -200px;
+    top: -215px;
     left: 50px;
     color: #ffff;
+    z-index: 2;
 }
 
 #owner{
@@ -86,15 +86,16 @@ body{
     position: relative;
     top: 20px;
     right: 80px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
 .card-exp{
     position: relative;
-    top: -225px;
+    top: -245px;
     left: 380px;
     color: #ffff;
+    z-index: 2;
 }
 
 #exp{
@@ -104,7 +105,15 @@ body{
 #exp-date{
     position: relative;
     top: 20px;
-    right: 45px;
-    font-size: 1.2rem;
+    right: 50px;
+    font-size: 1.5rem;
     font-weight: 600;
+}
+
+.card-back{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top: -100%;
+    z-index: 0;
 }
