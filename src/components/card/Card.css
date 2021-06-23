@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700|Source+Sans+Pro:400,600,700&display=swap");
+
+body{
+    font-family: "Source Sans Pro", sans-serif;
+}
+.card{
+    height: 300px;
+    width: 500px;
+    background-color: aquamarine;
+    border-radius: 15px;
+    box-shadow: 0px 40px 80px #577481;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-left: 20px;
+}
+
+.card-front{
+    height: 100%;
+    width: 100%;
+}
+
+.card-background{
+    height: 100%;
+    width: 100%;
+}
+
+.card-background-image{
+    height: 200%;
+    width: 100%;
+}
+
+.card-type{
+    position: relative;
+    top: -280px;
+    left: 310px;
+    height: 40px;
+    width: 180px;
+    z-index: 1;
+}
+
+.card-type-image{
+    height: 100%;
+    width: 100%;
+}
+
+.card-chip{
+    position: relative;
+    height: 50px;
+    width: 55px;
+    top: -280px;
+    left: 50px;
+}
+
+.card-chip-image{
+    height: 100%;
+    width: 100%;
+}
+
+.card-number{
+    position: relative;
+    letter-spacing: 2px;
+    top: -230px;
+    left: 50px;
+    color: #ffff;
+    font-size: 2rem;
+    font-weight:lighter;
+}
+
+#number-gap{
+    display: inline;
+    letter-spacing: 25px;
+}
+
+.card-owner{
+    position: relative;
+    top: -200px;
+    left: 50px;
+    color: #ffff;
+}
+
+#owner{
+    font-size: 1rem;
+}
+
+#owner-name{
+    position: relative;
+    top: 20px;
+    right: 80px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card-exp{
+    position: relative;
+    top: -225px;
+    left: 380px;
+    color: #ffff;
+}
+
+#exp{
+    font-size: 1rem;
+}
+
+#exp-date{
+    position: relative;
+    top: 20px;
+    right: 45px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
