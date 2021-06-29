@@ -1,6 +1,6 @@
 import React from "react"
-import "./Card.css"
-import background from "../../../src/assets/background/5.jpg"
+import "./PaymentCard.css"
+import background from "../../../src/assets/background/2.jpg"
 import discover from "../../../src/assets/types/discover.png"
 import chip from "../../assets/chip.png"
 

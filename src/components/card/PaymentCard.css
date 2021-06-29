@@ -19,7 +19,7 @@
 }
 
 .card-background-image{
-    filter:blur(3px);
+    filter:brightness(70%);
     height: 150%;
     width: 100%;
 }

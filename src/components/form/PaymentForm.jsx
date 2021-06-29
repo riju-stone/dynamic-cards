@@ -1,5 +1,5 @@
 import React from "react"
-import "./Form.css"
+import "./PaymentForm.css"
 import PaymentCard from "../card/PaymentCard"
 
 function PaymentForm () {
