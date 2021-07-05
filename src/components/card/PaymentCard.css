@@ -3,7 +3,7 @@
     width: 500px;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0px 20px 50px #49626d;
+    box-shadow: 0px 20px 50px rgba(78, 120, 172, 0.6);
     z-index: 2;
 }
 
@@ -26,9 +26,9 @@
 
 .card-type{
     position: relative;
-    top: -280px;
-    left: 300px;
-    height: 40px;
+    top: -260px;
+    left: 280px;
+    height: 3rem;
     width: 180px;
     z-index: 2;
 }
@@ -43,7 +43,7 @@
     position: relative;
     height: 50px;
     width: 55px;
-    top: -280px;
+    top: -310px;
     left: 50px;
     z-index: 2;
 }
@@ -80,11 +80,12 @@
 
 #owner{
     font-size: 1rem;
+    opacity: 0.6;
 }
 
 #owner-name{
     position: relative;
-    top: 20px;
+    top: 25px;
     right: 80px;
     font-size: 1.5rem;
     font-weight: 600;
@@ -100,11 +101,12 @@
 
 #exp{
     font-size: 1rem;
+    opacity: 0.6;
 }
 
 #exp-date{
     position: relative;
-    top: 20px;
+    top: 25px;
     right: 50px;
     font-size: 1.5rem;
     font-weight: 600;
