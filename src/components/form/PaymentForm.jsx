@@ -1,28 +1,38 @@
-import React from "react"
+import React, {useState} from "react"
 import "./PaymentForm.css"
 import PaymentCard from "../card/PaymentCard"
 
 function PaymentForm () {
+    const [rotation, setRotation] = useState('')
+
+    const showBackside = () => {
+        setRotation('flip')
+    }
+
+    const showFrontside = () => {
+        setRotation('')
+    }
+
     return(
         <div className="form-wrapper">
-            <PaymentCard/>
+            <PaymentCard rotate={rotation}/>
             <div className="form-container">
                 <form action="" method="post" className="form-input-container">
                     <div className="form-element">
                         <p className="form-heading">Card Number</p>
-                        <input type="text" className="form-input"/>
+                        <input type="text" className="form-input" maxLength="16" onClick={showFrontside}/>
                     </div>
 
                     <div className="form-element">
                         <p className="form-heading">Card Holder Name</p>
-                        <input type="text" className="form-input"/>
+                        <input type="text" className="form-input" onClick={showFrontside}/>
                     </div>
 
                     <div className="form-element-details">
                         <div className="form-element">
                             <div className="exp-element">
                                 <p className="form-heading">Expiry Date</p>
-                                <select name="" id="month" className="form-input exp">
+                                <select name="" id="month" className="form-input exp" onClick={showFrontside}>
                                     <option value="initial" disabled selected>Month</option>
                                     <option value="1">January</option>
                                     <option value="2">February</option>
@@ -37,7 +47,7 @@ function PaymentForm () {
                                     <option value="11">November</option>
                                     <option value="12">December</option>
                                 </select>
-                                <select name="" id="year" className="form-input exp" placeholder="Year">
+                                <select name="" id="year" className="form-input exp" placeholder="Year" onClick={showFrontside}>
                                     <option value="initial" disabled selected>Year</option>
                                     <option value="2021">2021</option>
                                     <option value="2022">2022</option>
@@ -55,11 +65,11 @@ function PaymentForm () {
 
                         <div className="form-element">
                             <p className="form-heading">CVV</p>
-                            <input type="password" className="form-input cvv" maxLength="3"/>
+                            <input type="password" className="form-input cvv" maxLength="3" onClick={showBackside}/>
                         </div>
                     </div>
                 </form>
-                <button className="payment-button">Pay</button>
+                <button className="payment-button" onClick={showFrontside}>Pay</button>
             </div>
         </div>
     )
