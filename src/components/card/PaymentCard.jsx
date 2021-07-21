@@ -6,7 +6,7 @@ import type from "../../assets/types/visa.svg"
 import background from "../../assets/background/14.jpg"
 
 
-const PaymentCard = ({rotate}) => {
+const PaymentCard = ({rotate, cardNumber, cardOwner, expMonth, expYear, cvv}) => {
     return( 
         <div className="card">
             <div className={`card-inner ${rotate}`}>
@@ -21,21 +21,21 @@ const PaymentCard = ({rotate}) => {
                         <img src={chip} alt="" className="card-chip-image" />
                     </div>
                     <div className="card-number">
-                        <span>3253</span>
+                        <span>{cardNumber[0]}</span>
                         <span id="number-gap"> </span>
-                        <span>3535</span>
+                        <span>{cardNumber[1]}</span>
                         <span id="number-gap"> </span>
-                        <span>3552</span>
+                        <span>{cardNumber[2]}</span>
                         <span id="number-gap"> </span>
-                        <span>3535</span>
+                        <span>{cardNumber[3]}</span>
                     </div>
                     <div className="card-owner">
                         <span id="owner">Card Holder</span>
-                        <span id="owner-name">Arighna Chakraborty</span>
+                        <span id="owner-name">{cardOwner}</span>
                     </div>
                     <div className="card-exp">
                         <span id="exp">Expires</span>
-                        <span id="exp-date">02/23</span>
+                        <span id="exp-date">{expMonth} / {expYear}</span>
                     </div>
                 </div>
                 <div className="card-back">
@@ -46,7 +46,7 @@ const PaymentCard = ({rotate}) => {
                     <p id="authorized-signature">Authorized Signature</p>
                     <div className="card-signature"></div>
                     <p id="cvv-text">CVV</p>
-                    <div className="card-cvv">***</div>
+                    <div className="card-cvv">{cvv}</div>
                     <div className="card-instructions"></div>
                 </div>
             </div>

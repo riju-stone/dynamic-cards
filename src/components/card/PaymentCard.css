@@ -100,15 +100,15 @@
 
 #owner{
     position: relative;
-    right: 50px;
     font-size: 1rem;
+    left: -70px;
     opacity: 0.6;
 }
 
 #owner-name{
     position: relative;
     top: 25px;
-    right: 130px;
+    left: -150px;
     font-size: 1.5rem;
     font-weight: 600;
 }
@@ -164,9 +164,9 @@
 .card-signature{
     position: relative;
     left: 30px;
-    width: 65%;
+    width: 70%;
     height: 50px;
-    background-color: antiquewhite;
+    background-color: rgb(194, 194, 194);
     top: -230px;
     border-radius: 5px;
 }
@@ -184,8 +184,8 @@
 
 .card-cvv{
     position: relative;
-    top: -290px;
-    left: 380px;
+    top: -288px;
+    left: 385px;
     width: 15%;
     height: 30px;
     border-radius: 5px;
